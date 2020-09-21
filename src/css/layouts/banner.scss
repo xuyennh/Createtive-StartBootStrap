@@ -1,0 +1,27 @@
+.banner {
+	padding-top: 72px;
+	background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%),
+		url('https://startbootstrap.github.io/startbootstrap-creative/assets/img/bg-masthead.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	@include breakpoint(768) {
+		padding-top: 160px;
+		padding-bottom: 88px;
+	}
+	@include min-breakpoint(992) {
+		height: 100vh;
+		min-height: 640px;
+	}
+}
+.banner__title {
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.banner__desc {
+	font-size: 18px;
+	color: rgba(255, 255, 255, 0.75);
+	font-weight: 300;
+	padding-bottom: 48px;
+}
