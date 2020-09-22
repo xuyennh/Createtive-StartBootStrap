@@ -1,15 +1,17 @@
-.header#header-scrolled.fixed-top
+.header#mainHead.fixed-top.header-scrolled
   .container
     .header__wrap
       .header__top
         .logo
-          a(href="").logo-text#header-scrollText Start Bootstrap
+          a(href="#").logo-text#logo-text Start Bootstrap
         .burger.toggler
           .line1
           .line2
           .line3
-      .header__nav
+      nav.header__nav
         ul.navbar
+          li
+            a.navbar__link.banner-link(href="#banner")
           li.navbar__item
             a.navbar__link#header-scrollText(href='#about') About
           li.navbar__item

@@ -150,7 +150,15 @@ body {
   font-family: "Montserrat", sans-serif; }
 
 h1 {
-  font-size: 40px; }
+  font-size: 36px; }
+
+@media screen and (min-width: 992px) {
+  h1 {
+    font-size: 40px; } }
+
+@media screen and (min-width: 1200px) {
+  h1 {
+    font-size: 56px; } }
 
 h2 {
   font-size: 32px; }
@@ -222,6 +230,9 @@ h3 {
   .navbar__link:hover {
     color: #fff; }
 
+.active {
+  color: #f4623a !important; }
+
 .logo-text {
   font-weight: 700;
   font-size: 20px;
@@ -231,9 +242,6 @@ h3 {
   @media only screen and (max-width: 768px) {
     .logo-text {
       color: #000 !important; } }
-
-.active {
-  color: #f4623a; }
 
 .burger {
   position: relative;
@@ -279,6 +287,9 @@ h3 {
   transform: translate(0, 50%) rotate(45deg);
   transition-delay: 0.2s; }
 
+.banner-link {
+  display: none; }
+
 .banner {
   padding-top: 72px;
   background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("https://startbootstrap.github.io/startbootstrap-creative/assets/img/bg-masthead.jpg");
@@ -315,8 +326,39 @@ h3 {
   font-size: 80%;
   font-weight: 400; }
 
-.section {
+.section-page {
   padding: 128px 0; }
+
+.portfolio__box {
+  position: relative;
+  display: block; }
+
+.portfolio__caption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  color: #fff;
+  background: rgba(244, 98, 58, 0.9);
+  transition: opacity 0.25s ease;
+  text-align: center; }
+
+.portfolio__box:hover .portfolio__caption {
+  opacity: 1; }
+
+.portfolio__category {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5); }
+
+.portfolio__name {
+  font-size: 20px; }
 
 .about {
   background-color: #f4623a; }
@@ -326,10 +368,6 @@ h3 {
 
 .about__desc {
   color: rgba(255, 255, 255, 0.5); }
-
-@media only screen and (max-width: 768px) {
-  .contact_item:nth-of-type(0) {
-    margin-bottom: 48px; } }
 
 .contact__desc {
   color: #6c757d; }

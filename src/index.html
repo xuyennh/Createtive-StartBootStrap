@@ -17,29 +17,30 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="header fixed-top" id="header-scrolled">
+      <div class="header fixed-top header-scrolled" id="mainHead">
         <div class="container">
           <div class="header__wrap">
             <div class="header__top">
-              <div class="logo"><a class="logo-text" href="" id="header-scrollText">Start Bootstrap</a></div>
+              <div class="logo"><a class="logo-text" href="#" id="logo-text">Start Bootstrap</a></div>
               <div class="burger toggler">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
               </div>
             </div>
-            <div class="header__nav">
+            <nav class="header__nav">
               <ul class="navbar">
+                <li><a class="navbar__link banner-link" href="#banner"></a></li>
                 <li class="navbar__item"><a class="navbar__link" id="header-scrollText" href="#about">About</a></li>
                 <li class="navbar__item"><a class="navbar__link" id="header-scrollText" href="#service">Service</a></li>
                 <li class="navbar__item"><a class="navbar__link" id="header-scrollText" href="#portfolio">Portfolio</a></li>
                 <li class="navbar__item"><a class="navbar__link" id="header-scrollText" href="#contact">Contact</a></li>
               </ul>
-            </div>
+            </nav>
           </div>
         </div>
       </div>
-      <div class="banner" id="banner">
+      <div class="banner section" id="banner">
         <div class="container h-100">
           <div class="row h-100 align-items-center justify-content-center text-center">
             <div class="col-lg-10 align-self-end">
@@ -52,7 +53,7 @@
           </div>
         </div>
       </div>
-      <div class="about section" id="about">
+      <div class="about section section-page" id="about">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-8 text-center">
@@ -63,7 +64,7 @@
           </div>
         </div>
       </div>
-      <div class="service section" id="service">
+      <div class="service section-page section" id="service">
         <div class="container">
           <h2 class="service__title text-center">At your Service</h2>
           <hr class="divider my-24">
@@ -99,20 +100,43 @@
           </div>
         </div>
       </div>
-      <div class="portfolio" id="portfolio">
+      <div class="portfolio section" id="portfolio">
         <div class="container-fluid p-0">
           <div class="row no-gutters">
             <div class="col-sm-6 col-lg-4"><a class="portfolio__box" href=""><img src="https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/fullsize/1.jpg" alt="">
-                <div class="portfolio__caption"></div></a></div>
-            <div class="col-sm-6 col-lg-4"><a class="portfolio__box" href=""><img src="https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/fullsize/2.jpg" alt=""></a></div>
-            <div class="col-sm-6 col-lg-4"><a class="portfolio__box" href=""><img src="https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/fullsize/3.jpg" alt=""></a></div>
-            <div class="col-sm-6 col-lg-4"><a class="portfolio__box" href=""><img src="https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/fullsize/4.jpg" alt=""></a></div>
-            <div class="col-sm-6 col-lg-4"><a class="portfolio__box" href=""><img src="https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/fullsize/5.jpg" alt=""></a></div>
-            <div class="col-sm-6 col-lg-4"><a class="portfolio__box" href=""><img src="https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/fullsize/6.jpg" alt=""></a></div>
+                <div class="portfolio__caption">
+                  <div class="portfolio__category">Category</div>
+                  <div class="portfolio__name">Project Name</div>
+                </div></a></div>
+            <div class="col-sm-6 col-lg-4"><a class="portfolio__box" href=""><img src="https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/fullsize/2.jpg" alt="">
+                <div class="portfolio__caption">
+                  <div class="portfolio__category">Category</div>
+                  <div class="portfolio__name">Project Name</div>
+                </div></a></div>
+            <div class="col-sm-6 col-lg-4"><a class="portfolio__box" href=""><img src="https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/fullsize/3.jpg" alt="">
+                <div class="portfolio__caption">
+                  <div class="portfolio__category">Category</div>
+                  <div class="portfolio__name">Project Name</div>
+                </div></a></div>
+            <div class="col-sm-6 col-lg-4"><a class="portfolio__box" href=""><img src="https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/fullsize/4.jpg" alt="">
+                <div class="portfolio__caption">
+                  <div class="portfolio__category">Category</div>
+                  <div class="portfolio__name">Project Name</div>
+                </div></a></div>
+            <div class="col-sm-6 col-lg-4"><a class="portfolio__box" href=""><img src="https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/fullsize/5.jpg" alt="">
+                <div class="portfolio__caption">
+                  <div class="portfolio__category">Category</div>
+                  <div class="portfolio__name">Project Name</div>
+                </div></a></div>
+            <div class="col-sm-6 col-lg-4"><a class="portfolio__box" href=""><img src="https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/fullsize/6.jpg" alt="">
+                <div class="portfolio__caption">
+                  <div class="portfolio__category">Category</div>
+                  <div class="portfolio__name">Project Name</div>
+                </div></a></div>
           </div>
         </div>
       </div>
-      <div class="freedownload section">
+      <div class="freedownload section-page">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-8 text-center">
@@ -121,7 +145,7 @@
           </div>
         </div>
       </div>
-      <div class="contact section" id="contact">
+      <div class="contact section section-page" id="contact">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-8 text-center">

@@ -34,6 +34,7 @@
 .header__nav-actives {
 	max-height: 500px;
 }
+
 .navbar {
 	margin: 0;
 	padding: 0;
@@ -62,6 +63,11 @@
 		color: #fff;
 	}
 }
+
+.active {
+	color: #f4623a !important;
+}
+
 .logo-text {
 	font-weight: 700;
 	font-size: 20px;
@@ -73,10 +79,8 @@
 		color: #000 !important;
 	}
 }
-.active {
-	color: #f4623a;
-}
 
+//burger
 .burger {
 	position: relative;
 	width: 20px;
@@ -121,4 +125,7 @@
 	bottom: 50%;
 	transform: translate(0, 50%) rotate(45deg);
 	transition-delay: 0.2s;
+}
+.banner-link {
+	display: none;
 }
